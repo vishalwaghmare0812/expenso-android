@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    <color name="green">#A5FFA9</color>-->
+    <!--    <color name="red">#FFA4A4</color>-->
+    <!--    <color name="blue">#A5D6FF</color>-->
+
+    <color name="blue">#3682F4</color>
+
+    <color name="darkBlue">#2196F3</color>
+    <color name="darkGreen">#21F324</color>
+    <color name="darkRed">#F32121</color>
+
+
+    <!--        <color name="black">#FF000000</color>-->
+    <!--    <color name="white">#FFFFFFFF</color>-->
+
+    <!--    <color name="matteWhite">#F2F2F2</color>-->
+    <!--    <color name="matteBlack">#1C1C1C</color>-->
+
+
+    <color name="greenStrok">#4CAF50</color>
+    <color name="greenSolid">#274CAF50</color>
+
+    <color name="redStrok">#AF4C4C</color>
+    <color name="redSolid">#27AF4C4C</color>
+
+    <color name="greyStrok">#BFBEBE</color>
+    <color name="greySolid">#eeee</color>
+
+    <color name="off_white">#ECECEC</color>
+    <color name="dark_grey">#2c2c2c</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#171616</color>
+
+
+
+    <!--colorContainer  //  colorAccent-->
+    <!--    off_white /// dark_grey -->
+
+    <!--colorAccent  //  colorOnBackground-->
+    <!--    dark_grey /// off_white -->
+
+    <!--colorOnBackground // colorContainer-->
+    <!--    white /// black -->
+
+
+</resources>

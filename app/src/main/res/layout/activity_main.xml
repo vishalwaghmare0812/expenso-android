@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".views.activities.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_bg"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Income"
+            android:textSize="22sp"
+            android:fontFamily="@font/rubik_light"/>
+
+        <TextView
+            android:id="@+id/incomeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="INR 20,000"
+            android:textSize="19sp"
+            android:fontFamily="@font/rubik_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/box_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearLayout1"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik_light"
+            android:text="Expenses"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/expensesLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="INR 12,000"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_bg"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Amount"
+            android:textSize="22sp"
+            android:fontFamily="@font/rubik_light"/>
+
+        <TextView
+            android:id="@+id/totalAmountLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="INR 22,000"
+            android:textSize="19sp"
+            android:fontFamily="@font/rubik_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/previousDateBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backbtn"
+            android:contentDescription="Previous Date"
+            app:tint="?attr/colorAccent" />
+
+        <TextView
+            android:id="@+id/currentDateTv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:text="24, June 2026"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/nextDateBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backbtn"
+            android:rotation="180"
+            android:contentDescription="Next Date"
+            app:tint="?attr/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorOnBackground"
+            app:tabIndicatorColor="?attr/colorAccent"
+            app:tabTextColor="?attr/colorAccent">
+
+            <com.google.android.material.tabs.TabItem
+                android:text="Daily" />
+
+            <com.google.android.material.tabs.TabItem
+                android:text="Month" />
+
+            <com.google.android.material.tabs.TabItem
+                android:text="Year" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tranList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout6"
+        tools:listitem="@layout/row_transaction" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plus"
+        app:tint="?attr/colorOnBackground"
+        android:backgroundTint="?attr/colorAccent"
+        android:contentDescription="Add Transaction" />
+
+    <ImageView
+        android:id="@+id/emptyState"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.5"
+        android:visibility="visible"
+        android:src="@drawable/emptystate"
+        android:contentDescription="No Data"
+        app:tint="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tranList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
