@@ -1,6 +1,6 @@
 # Expenso
 
-Expenso is an minimal modern and offline expense tracker that helps users manage daily, monthly, and yearly finances with local data storage using Realm Database.
+Expenso is an minimal modern and offline expense tracker that helps users manage daily finances with local data storage using Realm Database.
 
 ## Features
 
